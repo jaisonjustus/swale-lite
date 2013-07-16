@@ -1,0 +1,25 @@
+<div class="header">
+	<img class="header__image" src=""/>
+	<h1 class="header__blog-name">{{config.blog.name}}</h1>
+	<h3 class="header__author-name">{{config.author.name}}</h3>
+	<p class="header__short-bio">{{config.author.bio}}</p>
+	<ol class="header__social-links">
+		<li class="header__social-link header__social-link_github">{{config.social.github}}</li>
+		<li class="header__social-link header__social-link_twitter">{{config.social.twitter}}</li>
+		<li class="header__social-link header__social-link_facebook">{{config.social.facebook}}</li>
+	</ol>
+</div>
+<div class="">
+	<ol>
+		<li ng-repeat="post in posts">
+			<h1>{{post.name}}</h1>
+			<h3>{{config.author.name}}</h3>
+			<h4>{{post.date}}</h4>
+			<ul>
+				<li ng-repeat="tag in post.tags">{{tag}}</li>
+			</ul>
+			<p>{{post.desc}}</p>
+			<a href="#/post/{{post.file}}">Read More</a>
+		</li>
+	</ol>
+</div>

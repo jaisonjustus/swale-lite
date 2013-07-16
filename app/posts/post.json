@@ -1,0 +1,17 @@
+[
+	{
+		"name" : "AngularJS Best Practice",
+		"desc" : "This leaflet includes best practice to be followed and understanding while developing an Angular application. This leaflet is Based on Misko Hevery talk about AngularJS best practices. You can find the video on youtube's angular channel. Check the resource for links and more details.",
+		"file"  : "angularjs-best-practice.md",
+		"date" : "12 June 2012",
+		"tags" : ["Javascript", "AngularJS"]
+	},
+
+	{
+		"name" : "Faye, The Pub/Sub Rockstart",
+		"desc" : "Faye is a simple and elegant publish-subscribe messaging library. Faye is build based on Bayeux. Bayeux is a protocol for transfering data asynchronously between server-client with lower latency. Protocol is meant to support responsive bidirectional interaction between server-client, client-client through server. Bayeux is based on publish subscribe routing semantics. Delivery of asynchronous messages from the server to a web client is often described as server-push. The combination of server push techniques with an Ajax web application has been called Comet. CometD is a project by the Dojo Foundation to provide multiple implementation of the Bayeux protocol in several programming languages.",
+		"file"  : "angularjs-best-practice.md",
+		"date" : "12 June 2012",
+		"tags" : ["Pub-Sub", "Javascript", "NodeJS", "Ruby"]
+	}
+]

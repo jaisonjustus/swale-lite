@@ -1,0 +1,17 @@
+{
+	"blog"	: {
+		"name" : "I/O of a Developer"
+	},
+
+	"author" : {
+		"name" : "Jaison Justus",
+		"email" : "jaison.justus.lp@gmail.com",
+		"bio" : "Javascript Developer"
+	},
+
+	"social" : {
+		"facebook" : "jaison.justus",
+		"twitter" : "jaisonjustus",
+		"github" : "jaisonjustus"
+	}
+}
