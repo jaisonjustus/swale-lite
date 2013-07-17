@@ -1,0 +1,39 @@
+.header	{
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.header__avatar	{
+	margin: 0; padding: 0;
+	margin-bottom: 20px;
+	width: 200px;
+	height: 200px;
+	border-radius: 200px;
+	background-color: white;
+	padding: 10px;
+	box-shadow: 0px 0px 3px 1px #eeeeee;
+}
+
+.header__blog-name	{
+	margin: 0; padding: 0;
+	margin-bottom: 10px;
+	font: 700 40px "Source Sans Pro";
+}
+
+.header__short-bio	{
+	margin: 0; padding: 0;
+	margin-bottom: 5px;
+	font: 200 20px "Source Sans Pro";
+}
+
+.header__author-name	{
+	margin: 0; padding: 0;
+	margin-bottom: 5px;
+	font: 300 22px "Source Sans Pro";
+}
+
+.header__social-links	{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}

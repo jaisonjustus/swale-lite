@@ -1,5 +1,5 @@
 .article__name	{
-	font: 700 20px "Noto serif";
+	font: 700 30px "Source Sans Pro";
 	color: #171817;
 	margin: 0;
 	padding: 0;
@@ -7,7 +7,7 @@
 }
 
 .article__date	{
-	font: 400 13px "Noto serif";
+	font: 400 13px "Source Sans Pro";
 	color: #171817;
 	margin: 0;
 	padding: 0;
@@ -15,25 +15,25 @@
 }
 
 .article__tags	{
+	clear: both;
 	padding: 0;
 	margin:0;
-	display: inline;
 }
 
 .article__tag	{
-	font: 700 12px "Noto serif";
+	font: 700 12px "Source Sans Pro";
 	color: #171817;
 	background-color: #eeeeee;
 	margin-right: 10px; 
 	list-style: none;
 	width: auto;
-	display: inline;
+	clear: both;
 	padding: 2px 5px 2px 5px;
 	border-radius: 3px;
 }
 
 .article__desc	{
-	font: 400 15px "Noto serif";
+	font: 400 15px "Source Sans Pro";
 	color: #171817;
 }
 
@@ -42,15 +42,21 @@
 }
 
 .article__content	{
-	font: 200 16px "Noto serif";
+	font: 200 16px "Source Sans Pro";
 	color:#171817;
+}
+
+.article__content p,li	{
+	font: 400 17px "Source Sans Pro";
+	color:#171817;
+	line-height: 23px;
 }
 
 .article__content	code {
   background-color: #eeeeee;
   display: block;
   padding: 10px;
-  font: 200 16px "Noto serif";
+  font: 600 15px "Source Sans Pro";
   line-height: 22px;
 }
 

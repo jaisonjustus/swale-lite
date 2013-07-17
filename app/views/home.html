@@ -1,24 +1,29 @@
 <div class="header">
-	<img class="header__image" src=""/>
+	<img class="header__avatar" src="http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200"/>
 	<h1 class="header__blog-name">{{config.blog.name}}</h1>
+	<p class="header__short-bio">by</p>
 	<h3 class="header__author-name">{{config.author.name}}</h3>
 	<p class="header__short-bio">{{config.author.bio}}</p>
-	<ol class="header__social-links">
-		<li class="header__social-link header__social-link_github">{{config.social.github}}</li>
-		<li class="header__social-link header__social-link_twitter">{{config.social.twitter}}</li>
-		<li class="header__social-link header__social-link_facebook">{{config.social.facebook}}</li>
-	</ol>
+	<div class="header__social-links">
+		<span class="header__social-link header__social-link_github">{{config.social.github}}</span>
+		<span class="header__social-link header__social-link_twitter">{{config.social.twitter}}</span>
+		<span class="header__social-link header__social-link_facebook">{{config.social.facebook}}</span>
+	</div>
 </div>
 <div class="home__posts-wrapper">
 	<ol class="home__posts">
 		<li class="home__post" ng-repeat="post in posts">
-			<h1 class="article__name">{{post.name}}</h1>
-			<h4 class="article__date">{{post.date}}</h4>
-			<ul class="article__tags">
-				<li class="article__tag" ng-repeat="tag in post.tags">{{tag}}</li>
-			</ul>
-			<p class="article__desc">{{post.desc}}</p>
-			<a class="article__readmore" href="#/post/{{post.file}}">Read More</a>
+			<div class="home__post-article-details">
+				<div class="home__post-article-icon home__post-article-icon_{{$index%14}}"></div>
+				<h4 class="home__post-article-date article__date">{{post.date}}</h4>
+				<!-- <span class="article__tag" ng-repeat="tag in post.tags">{{tag}}</span> -->
+			</div>
+			<div class="home__post-article-content">
+				<a href="#/post/{{post.file}}" class="home__post-article-name article__name">{{post.name}}</a>
+				
+				<p class="article__desc">{{post.desc}}</p>
+				<a class="home__post-article-link article__readmore" href="#/post/{{post.file}}">Read More</a>
+			</div>
 		</li>
 	</ol>
 </div>
