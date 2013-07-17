@@ -9,17 +9,16 @@
 		<li class="header__social-link header__social-link_facebook">{{config.social.facebook}}</li>
 	</ol>
 </div>
-<div class="">
-	<ol>
-		<li ng-repeat="post in posts">
-			<h1>{{post.name}}</h1>
-			<h3>{{config.author.name}}</h3>
-			<h4>{{post.date}}</h4>
-			<ul>
-				<li ng-repeat="tag in post.tags">{{tag}}</li>
+<div class="home__posts-wrapper">
+	<ol class="home__posts">
+		<li class="home__post" ng-repeat="post in posts">
+			<h1 class="article__name">{{post.name}}</h1>
+			<h4 class="article__date">{{post.date}}</h4>
+			<ul class="article__tags">
+				<li class="article__tag" ng-repeat="tag in post.tags">{{tag}}</li>
 			</ul>
-			<p>{{post.desc}}</p>
-			<a href="#/post/{{post.file}}">Read More</a>
+			<p class="article__desc">{{post.desc}}</p>
+			<a class="article__readmore" href="#/post/{{post.file}}">Read More</a>
 		</li>
 	</ol>
 </div>

@@ -1,0 +1,11 @@
+.layout: {
+
+}
+
+.layout__wrapper	{
+	width: 700px;
+	height: auto;
+	padding: 10px;
+	overflow: hidden;
+	margin: auto;
+}

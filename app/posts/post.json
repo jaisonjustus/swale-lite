@@ -3,6 +3,7 @@
 		"name" : "AngularJS Best Practice",
 		"file"  : "angularjs-best-practice",
 		"date" : "12 June 2012",
+		"desc" : "Best Practice to follow while developing and angular application",
 		"tags" : ["Javascript", "AngularJS"]
 	},
 

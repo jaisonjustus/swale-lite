@@ -1,0 +1,59 @@
+.article__name	{
+	font: 700 20px "Noto serif";
+	color: #171817;
+	margin: 0;
+	padding: 0;
+	margin: 5px 0px 5px 0px;
+}
+
+.article__date	{
+	font: 400 13px "Noto serif";
+	color: #171817;
+	margin: 0;
+	padding: 0;
+	margin: 5px 0px 5px 0px;
+}
+
+.article__tags	{
+	padding: 0;
+	margin:0;
+	display: inline;
+}
+
+.article__tag	{
+	font: 700 12px "Noto serif";
+	color: #171817;
+	background-color: #eeeeee;
+	margin-right: 10px; 
+	list-style: none;
+	width: auto;
+	display: inline;
+	padding: 2px 5px 2px 5px;
+	border-radius: 3px;
+}
+
+.article__desc	{
+	font: 400 15px "Noto serif";
+	color: #171817;
+}
+
+.article__readmore	{
+
+}
+
+.article__content	{
+	font: 200 16px "Noto serif";
+	color:#171817;
+}
+
+.article__content	code {
+  background-color: #eeeeee;
+  display: block;
+  padding: 10px;
+  font: 200 16px "Noto serif";
+  line-height: 22px;
+}
+
+.article__content hr {
+	border: 1px solid #eeeeee;
+}

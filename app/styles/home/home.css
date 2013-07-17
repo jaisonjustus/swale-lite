@@ -1,0 +1,19 @@
+.home__posts-wrapper	{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.home__posts	{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.home__post	{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	list-style: none;
+	margin-top: 30px;
+}

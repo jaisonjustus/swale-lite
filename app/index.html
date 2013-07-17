@@ -10,12 +10,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/article/article.css" type="text/css">
+    <link rel="stylesheet" href="styles/home/home.css" type="text/css">
+    <link rel="stylesheet" href="styles/layout/layout.css" type="text/css">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css styles/main.css -->
     
     <!-- endbuild -->
   </head>
-  <body ng-app="Swale">
+  <body class="layout__backdrop_night" ng-app="Swale">
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
@@ -26,7 +29,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container" ng-view="app"></div>
+    <div class="layout__wrapper" ng-view="app"></div>
 
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
