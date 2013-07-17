@@ -1,13 +1,13 @@
 'use strict'
 
-angular.module('Kurippu')
+angular.module('Swale')
 .service('Config', function($http)	{
 
 	var _config = null;
 
 	return	{
 		fetch : function()	{
-			return $http.get('kurippu.conf.json').success(function(data)	{
+			return $http.get('swale.conf.json').success(function(data)	{
 				_config = data;
 			});
 		},

@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('Kurippu')
+angular.module('Swale')
 .controller('PostController', function($scope, $rootScope, $routeParams, $q, $http)	{
 	
 	console.log($rootScope.test);

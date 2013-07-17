@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Kurippu', [])
+angular.module('Swale', [])
 
   .config(function ($routeProvider) {
     $routeProvider

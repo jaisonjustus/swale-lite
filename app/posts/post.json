@@ -1,7 +1,6 @@
 [
 	{
 		"name" : "AngularJS Best Practice",
-		"desc" : "This leaflet includes best practice to be followed and understanding while developing an Angular application. This leaflet is Based on Misko Hevery talk about AngularJS best practices. You can find the video on youtube's angular channel. Check the resource for links and more details.",
 		"file"  : "angularjs-best-practice",
 		"date" : "12 June 2012",
 		"tags" : ["Javascript", "AngularJS"]
@@ -9,7 +8,6 @@
 
 	{
 		"name" : "Faye, The Pub/Sub Rockstart",
-		"desc" : "Faye is a simple and elegant publish-subscribe messaging library. Faye is build based on Bayeux. Bayeux is a protocol for transfering data asynchronously between server-client with lower latency. Protocol is meant to support responsive bidirectional interaction between server-client, client-client through server. Bayeux is based on publish subscribe routing semantics. Delivery of asynchronous messages from the server to a web client is often described as server-push. The combination of server push techniques with an Ajax web application has been called Comet. CometD is a project by the Dojo Foundation to provide multiple implementation of the Bayeux protocol in several programming languages.",
 		"file"  : "faye-intro",
 		"date" : "12 June 2012",
 		"tags" : ["Pub-Sub", "Javascript", "NodeJS", "Ruby"]
@@ -17,7 +15,6 @@
 
 	{
 		"name" : "The day that starts changing me",
-		"desc" : "On last week 18th October a pleasant Friday,today i need to go to banglore to attend a great  javascript event called jsfoo. this trip to banglore is very much important to me by two reasons. one thing my first travel to banglore except the college trip, because during the college trip i didn’t feel banglore and  and i only saw the lal bagh and forum (a mall). the second thing is, jsfoo is the first conference that i am going in my life ever. being a javascript lover i cannot miss the event. with these reasons i packed my bag and move to the boarding point along with my friend Renjith, he  is a business man he accompanies with me to banglore. at correct time the bus arrived and bon voyage, banglore here i come.",
 		"file"  : "the-day-that-starts-changing-me",
 		"date" : "12 June 2012",
 		"tags" : ["Pub-Sub", "Javascript", "NodeJS", "Ruby"]
@@ -25,7 +22,6 @@
 
 	{
 		"name" : "Hello Jekyll",
-		"desc" : "I came across lot of _Jekyl_ blog post and talks. At that time i think like whats new in a static site generator. Its static there is no use of static. But last week i came to know that static is powerfull yet than dynamic. same as in electricity so i planned to start the blog on my github using Jekyll. when i started using, its seems so cool. i loving this piece of art. i prefer everybody to try Jekyll. I like to share the steps i made this jekyll blog to up and running in github and finally _jaisonjustus.github.io_ voila!!. you can find the copy of the steps in different website, even in the references but i like to just spot down the steps, for further readings please go through the references, and feel free to share more references, feedback, typos etc.",
 		"file"  : "hello-jekyll",
 		"date" : "12 June 2012",
 		"tags" : ["Pub-Sub", "Javascript", "NodeJS", "Ruby"]

@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('Kurippu')
+angular.module('Swale')
 .service('Posts', function($http)	{
 
 	var _posts = null;
