@@ -5,9 +5,9 @@
 	<h3 class="header__author-name">{{config.author.name}}</h3>
 	<p class="header__short-bio">{{config.author.bio}}</p>
 	<div class="header__social-links">
-		<span class="header__social-link header__social-link_github">{{config.social.github}}</span>
-		<span class="header__social-link header__social-link_twitter">{{config.social.twitter}}</span>
-		<span class="header__social-link header__social-link_facebook">{{config.social.facebook}}</span>
+		<a href="{{value}}" class="header__social-link-url" target="_blank" ng-repeat="(key, value) in socials">
+			<img class="header__social-link-icon" src="images/social/{{key}}.png" />
+		</a>
 	</div>
 </div>
 <div class="home__posts-wrapper">

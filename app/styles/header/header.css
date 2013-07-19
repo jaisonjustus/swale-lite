@@ -1,6 +1,7 @@
 .header	{
 	text-align: center;
-	margin-bottom: 40px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #eeeeee;
 }
 
 .header__avatar	{
@@ -36,4 +37,27 @@
 	width: 100%;
 	height: auto;
 	overflow: hidden;
+	margin-top: 30px;
 }
+
+.header__social-link-url	{
+	text-decoration: none;
+	border: 0;
+}
+
+.header__social-link-icon	{
+	width:50px;
+	height: 50px;
+}
+
+.header__social-links_dribble	{ background-image: url(../images/social/dribble.png); }
+.header__social-links_facebook	{ background-image: url(../images/social/facebook.png); }
+.header__social-links_flickr	{ background-image: url(../images/social/flickr.png); }
+.header__social-links_github	{ background-image: url(../images/social/github.png); }
+.header__social-links_gplus	{ background-image: url(../images/social/gplus.png); }
+.header__social-links_instagram	{ background-image: url(../images/social/instagram.png); }
+.header__social-links_linkedin	{ background-image: url(../images/social/linkedin.png); }
+.header__social-links_skype	{ background-image: url(../images/social/skype.png); }
+.header__social-links_twitter	{ background-image: url(../images/social/twitter.png); }
+.header__social-links_vimeo	{ background-image: url(../images/social/vimeo.png); }
+.header__social-links_youtube	{ background-image: url(../images/social/youtube.png); }
