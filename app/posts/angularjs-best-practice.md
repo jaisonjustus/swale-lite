@@ -1,4 +1,3 @@
-#Best Practices for AngularJS
 This leaflet includes best practice to be followed and understanding while developing an Angular application. This leaflet is Based on Misko Hevery talk about AngularJS best practices. You can find the video on youtube's angular channel. Check the resource for links and more details.
 
 ---
