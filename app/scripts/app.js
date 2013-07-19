@@ -19,7 +19,16 @@ angular.module('Swale', [])
         controller: 'HomeController'
       })
 
-      .when('/post/:file', {
+      .when('/post/:id/:file', {
+        resolve : {
+          'Kurippu' : function(Config)  {
+            return Config.fetch();
+          },
+
+          'KurippuPosts' : function(Posts)  {
+            return Posts.fetch();
+          }
+        },
         templateUrl : 'views/post.html',
         controller : 'PostController'
       })

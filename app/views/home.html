@@ -19,10 +19,10 @@
 				<!-- <span class="article__tag" ng-repeat="tag in post.tags">{{tag}}</span> -->
 			</div>
 			<div class="home__post-article-content">
-				<a href="#/post/{{post.file}}" class="home__post-article-name article__name">{{post.name}}</a>
+				<a href="#/post/{{$index}}/{{post.file}}" class="home__post-article-name article__name">{{post.name}}</a>
 				
 				<p class="article__desc">{{post.desc}}</p>
-				<a class="home__post-article-link article__readmore" href="#/post/{{post.file}}">Read More</a>
+				<a class="home__post-article-link article__readmore" href="#/post/{{$index}}/{{post.file}}">Read More</a>
 			</div>
 		</li>
 	</ol>

@@ -14,6 +14,17 @@
 	margin: 5px 0px 5px 0px;
 }
 
+.article__by	{
+	font: 200 20px "Source Sans Pro";
+	color: #171817;
+}
+
+.article__on 	{
+	font: 200 13px "Source Sans Pro";
+	color: #171817;
+	margin:0px 0px 0px 5px;
+}
+
 .article__tags	{
 	clear: both;
 	padding: 0;
@@ -44,12 +55,22 @@
 .article__content	{
 	font: 200 16px "Source Sans Pro";
 	color:#171817;
+	clear: both;
+	margin-top:20px;
+	border-top:1px dashed #eeeeee;
 }
 
 .article__content p,li	{
 	font: 400 17px "Source Sans Pro";
 	color:#171817;
-	line-height: 23px;
+	line-height: 30px;
+}
+
+.article__content a	{
+	text-decoration: none;
+	font: 400 17px "Source Sans Pro";
+	color:#3498db;
+	line-height: 30px;
 }
 
 .article__content	code {
