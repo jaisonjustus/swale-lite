@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module('Swale')
-.controller('PostController', function($scope, $rootScope, $routeParams, $q, $http, Config, Posts)	{
+.controller('PostController', function($scope, $routeParams, $q, $http, Config, Posts)	{
 
 	$scope.article = {};
 
