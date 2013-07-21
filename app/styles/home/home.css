@@ -1,7 +1,19 @@
+.home__post-search	{
+	width: 95%;
+	padding: 1% 2% 1% 2%;
+	margin:30px 0px 10px 0px;
+	background-color: white;
+	border: 0;
+	border: 1px solid #bbbbbb;
+	font:400 20px "Source Sans Pro";
+	box-shadow: 0px 0px 2px 0px #aaaaaa;
+}
+
 .home__posts-wrapper	{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
+	margin-bottom: 30px;
 }
 
 .home__posts	{
@@ -17,7 +29,6 @@
 	list-style: none;
 	margin-top: 30px;
 	padding-bottom: 30px;
-	/*border-bottom: 1px solid #eeeeee;*/
 }
 
 .home__post-article-details	{
@@ -74,7 +85,6 @@
 .home__post-article-name	{
 	text-decoration: none;
 	display: block;
-	/*margin-bottom: 2px; */
 }
 
 .home__post-article-link	{

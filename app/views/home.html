@@ -11,8 +11,11 @@
 	</div>
 </div>
 <div class="home__posts-wrapper">
+	<input type="text" class="home__post-search" ng-model="search" placeholder="Search Article"/>
 	<ol class="home__posts">
-		<li class="home__post" ng-repeat="post in posts">
+
+		<li class="home__post" ng-repeat="post in posts | filter : search">
+
 			<div class="home__post-article-details">
 				<div class="home__post-article-icon home__post-article-icon_{{$index%14}}"></div>
 				<h4 class="home__post-article-date article__date">{{post.date}}</h4>
