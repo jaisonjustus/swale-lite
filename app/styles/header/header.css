@@ -15,6 +15,17 @@
 	box-shadow: 0px 0px 3px 1px #eeeeee;
 }
 
+@media screen and (max-width:1030px)	{
+	.header__avatar	{
+		width: 100px;
+		height: 100px;
+		height: auto;
+		padding: 10px;
+		overflow: hidden;
+		margin: auto;
+	}	
+}
+
 .header__blog-name	{
 	margin: 0; padding: 0;
 	margin-bottom: 10px;

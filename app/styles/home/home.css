@@ -31,6 +31,22 @@
 	padding-bottom: 30px;
 }
 
+@media screen and (max-width: 1030px)	{
+	.home__post {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 700px)	{
+	.home__post-article-details	{
+		display: none;
+	}
+
+	.home__post-article-content	{
+		width: 100% !important;
+	}
+}
+
 .home__post-article-details	{
 	width: 130px;
 	height: auto;
@@ -45,7 +61,7 @@
 	height: auto;
 	overflow: hidden;
 	text-align: left;
-	float: right;
+	float: left;
 }
 
 .home__post-article-icon	{

@@ -79,6 +79,12 @@
   padding: 10px;
   font: 600 15px "Source Sans Pro";
   line-height: 22px;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+.article__content img {
+	width: 100%;
 }
 
 .article__content hr {
