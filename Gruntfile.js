@@ -159,7 +159,8 @@ module.exports = function (grunt) {
     },
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
-      css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
+      js: ['<%= yeoman.dist %>/{,*/}*.html'],
+      // css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
         dirs: ['<%= yeoman.dist %>']
       }
@@ -175,14 +176,23 @@ module.exports = function (grunt) {
       }
     },
     cssmin: {
-      dist: {
+      dist : {
+      combine: {
         files: {
-          '<%= yeoman.dist %>/styles/main.css': [
-            '.tmp/styles/{,*/}*.css',
-            '<%= yeoman.app %>/styles/{,*/}*.css'
+          // '<%= yeoman.dist %>/styles/main.css': [
+          //   '.tmp/styles/{,*/}*.css',
+          //   '<%= yeoman.app %>/styles/{,*/}*.css'
+          // ]
+          '<%= yeoman.dist %>/styles/swale.css': [
+            '<%= yeoman.app %>/styles/article/article.css',
+            '<%= yeoman.app %>/styles/header/header.css',
+            '<%= yeoman.app %>/styles/home/home.css',
+            '<%= yeoman.app %>/styles/layout/layout.css'
           ]
-        }
+        },
+        dest : '<%= yeoman.dist %>/styles/swale.css'
       }
+    }
     },
     htmlmin: {
       dist: {
@@ -233,10 +243,10 @@ module.exports = function (grunt) {
       dist: {
         files: {
           src: [
-            '<%= yeoman.dist %>/scripts/{,*/}*.js',
-            '<%= yeoman.dist %>/styles/{,*/}*.css',
-            '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
-            '<%= yeoman.dist %>/styles/fonts/*'
+          //  '<%= yeoman.dist %>/scripts/{,*/}*.js',
+          //  '<%= yeoman.dist %>/styles/{,*/}*.css',
+           // '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',
+           // '<%= yeoman.dist %>/styles/fonts/*'
           ]
         }
       }
@@ -253,8 +263,11 @@ module.exports = function (grunt) {
             '.htaccess',
             'components/**/*',
             'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*',
-            'posts/{,*/}*.{json}',
+            'styles/article/article.css',
+            'styles/header/header.css',
+            'styles/home/home.css',
+            'styles/layout/layout.css',
+            'posts/post.json',
             'swale.conf.json'
           ]
         }]
@@ -290,15 +303,15 @@ module.exports = function (grunt) {
     //'compass:dist',
     'useminPrepare',
     'imagemin',
-    'cssmin',
+    // 'cssmin',
     'htmlmin',
     'concat',
     'copy',
     'cdnify',
-    'ngmin',
-    'uglify',
+    // 'ngmin',
+    // 'uglify',
     'rev',
-    'usemin'
+    // 'usemin'
   ]);
 
   grunt.registerTask('default', ['build']);
