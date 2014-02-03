@@ -12,8 +12,6 @@
 .kurippu-list--item {
   position: relative;
   display: inline-block;
-/*  margin: .6em .5em .6em .5em;*/
-/*  margin:0;*/
 }
 
 
@@ -27,6 +25,7 @@
   font-size: 16px;
   border-bottom: .1em solid #eeeeee;
   margin-bottom: 1em;
+  color: #171817;
 }
 
 .kurippu-tile--big {
@@ -67,23 +66,21 @@
 .kurippu-tile--article_title  {
   margin: 0;
   padding: 0;
-  color: #171817;
   font-family: 'Droid Serif' Arial;
   font-size: 1.5em;
   font-weight: 700;
   margin-top: 1em;
-  padding: 0 .6em .6em .6em;
+  padding: 0 .6em 0em .6em;
 }
   
 .kurippu-tile--article--description {
   margin: 0;
   padding: 0;
-  color: #171817;
   font-family: 'Droid Serif' Arial;
   font-size: 1em;
   line-height: 1.6em;
   font-weight: 400;
-  padding:0em 1em;
+  padding:1em;
 }
   
 .kurippu-tile--readmore_link  {
@@ -95,4 +92,13 @@
   padding: 1em;
   float: left;
   cursor: pointer;
+}
+
+.kurippu-tile--meta {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  padding: 0em 1em 0em 1em;
+  font-weight: 300;
+  color: #444544;
 }
