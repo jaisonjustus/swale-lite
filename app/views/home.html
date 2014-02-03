@@ -1,15 +1,16 @@
-<div class="header">
-	<img class="header__avatar" src="http://www.gravatar.com/avatar/{{config.author.email}}?s=200"/>
-	<h1 class="header__blog-name">{{config.blog.name}}</h1>
-	<p class="header__short-bio">by</p>
-	<h3 class="header__author-name">{{config.author.name}}</h3>
-	<p class="header__short-bio">{{config.author.bio}}</p>
-	<div class="header__social-links">
-		<a href="{{value}}" class="header__social-link-url" target="_blank" ng-repeat="(key, value) in socials">
-			<img class="header__social-link-icon" src="images/social/{{key}}.png" />
+<div class="kurippu-header">
+	<img class="kurippu-header--avatar" src="http://www.gravatar.com/avatar/{{config.author.email}}?s=200"/>
+	<h1 class="kurippu-header--blog_name">{{config.blog.name}}</h1>
+	<p class="kurippu-header--bio">by</p>
+	<h3 class="kurippu-header--author">{{config.author.name}}</h3>
+	<p class="kurippu-header--bio">{{config.author.bio}}</p>
+	<div class="kurippu-header--social_links">
+		<a href="{{value}}" class="kurippu-header--social_link_url" target="_blank" ng-repeat="(key, value) in socials">
+			<img class="kurippu-header--social_link_icon" src="images/social/{{key}}.png" />
 		</a>
 	</div>
 </div>
+
 <div class="home__posts-wrapper">
 	<input type="text" class="home__post-search" ng-model="search" placeholder="Search Article"/>
   <ul class="kurippu-list">
