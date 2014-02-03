@@ -16,7 +16,7 @@
     <li class="kurippu-list--item" ng-repeat="post in posts | filter : search">
       <div class="kurippu-tile">
         <h1 class="kurippu-tile--article_title">{{post.name}}</h1>
-        <h2 class="kurippu-tile--meta">{{post.date}}</h2>
+        <h2 class="kurippu-tile--meta">{{post.about}}, {{post.date}}</h2>
         <p class="kurippu-tile--article--description">{{post.desc}}</p>
         <a class="kurippu-tile--readmore_link" href="#/post/{{$index}}/{{post.file}}">more</a>
       </div>
