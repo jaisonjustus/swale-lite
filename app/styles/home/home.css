@@ -14,6 +14,20 @@
   display: inline-block;
 }
 
+/** Search Box **/
+.kurippu-article_search {
+  width: 30%;
+  height: 30px;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  border: 0;
+  border: 2px solid #dddddd;
+  padding:0 1% 0 1%;
+  font: 500 17px "Source Sans Pro";
+  display: block;
+}
 
 /** Tile **/
 .kurippu-tile {
