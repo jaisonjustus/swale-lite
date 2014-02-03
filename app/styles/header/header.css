@@ -1,10 +1,12 @@
-.header	{
+.kurippu-header	{
+  width: 50%;
 	text-align: center;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #eeeeee;
+  margin: auto;
 }
 
-.header__avatar	{
+.kurippu-header--avatar	{
 	margin: 0; padding: 0;
 	margin-bottom: 20px;
 	width: 200px;
@@ -15,48 +17,52 @@
 	box-shadow: 0px 0px 3px 1px #eeeeee;
 }
 
-@media screen and (max-width:1030px)	{
-	.header__avatar	{
-		width: 100px;
-		height: 100px;
-		height: auto;
-		padding: 10px;
-		overflow: hidden;
-		margin: auto;
-	}	
-}
-
-.header__blog-name	{
+.kurippu-header--blog_name	{
 	margin: 0; padding: 0;
 	margin-bottom: 10px;
 	font: 700 40px "Source Sans Pro";
 }
 
-.header__short-bio	{
+.kurippu-header--bio	{
 	margin: 0; padding: 0;
 	margin-bottom: 5px;
 	font: 200 20px "Source Sans Pro";
 }
 
-.header__author-name	{
+.kurippu-header--author	{
 	margin: 0; padding: 0;
 	margin-bottom: 5px;
-	font: 300 22px "Source Sans Pro";
+	font: 300 25px "Source Sans Pro";
 }
 
-.header__social-links	{
+.kurippu-header--social_links	{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	margin-top: 30px;
 }
 
-.header__social-link-url	{
+.kurippu-header--social_link_url	{
 	text-decoration: none;
 	border: 0;
 }
 
-.header__social-link-icon	{
+.kurippu-header--social_link_icon	{
 	width:50px;
 	height: 50px;
+}
+
+@media screen and (max-width:1030px)	{
+	.kurippu-header--avatar	{
+		width: 100px;
+		height: 100px;
+		height: auto;
+		padding: 10px;
+		overflow: hidden;
+		margin: auto;
+	}
+  
+  .kurippu-header {
+    width: 100%;
+  }
 }
