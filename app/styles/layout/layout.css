@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 .kurippu-container	{
 	width: 98%;
 	height: auto;

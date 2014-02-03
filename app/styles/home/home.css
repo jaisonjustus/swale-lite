@@ -31,7 +31,6 @@
 
 /** Tile **/
 .kurippu-tile {
-  width: 280px;
   height: 470px;
   text-align: left;
   overflow: hidden;
@@ -40,6 +39,10 @@
   border-bottom: .1em solid #eeeeee;
   margin-bottom: 1em;
   color: #171817;
+}
+
+.kurippu-tile--small  {
+  width: 280px;
 }
 
 .kurippu-tile--big {
@@ -63,6 +66,15 @@
   display: none;
 }
 
+.kurippu-tile--article_link {
+  text-decoration: none;
+  color:#171817;
+}
+
+.kurippu-tile--article_link:hover {
+  text-decoration: underline;
+}
+
 .kurippu-tile--article_js_type { background-color: #f39c12; }
 .kurippu-tile--article_personal_type { background-color: #9b59b6; }
 .kurippu-tile--article_ruby_type { background-color: #c0392b; }
@@ -75,6 +87,7 @@
 .kurippu-tile--cover_image_big {
   width: 560px;
   height: 350px;
+  box-shadow: inset 0 0 10px #000000;
 }
   
 .kurippu-tile--article_title  {
