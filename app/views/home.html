@@ -12,21 +12,14 @@
 </div>
 <div class="home__posts-wrapper">
 	<input type="text" class="home__post-search" ng-model="search" placeholder="Search Article"/>
-	<ol class="home__posts">
-
-		<li class="home__post" ng-repeat="post in posts | filter : search">
-
-			<div class="home__post-article-details">
-				<div class="home__post-article-icon home__post-article-icon_{{$index%14}}"></div>
-				<h4 class="home__post-article-date article__date">{{post.date}}</h4>
-				<!-- <span class="article__tag" ng-repeat="tag in post.tags">{{tag}}</span> -->
-			</div>
-			<div class="home__post-article-content">
-				<a href="#/post/{{$index}}/{{post.file}}" class="home__post-article-name article__name">{{post.name}}</a>
-				
-				<p class="article__desc">{{post.desc}}</p>
-				<a class="home__post-article-link article__readmore" href="#/post/{{$index}}/{{post.file}}">Read More</a>
-			</div>
-		</li>
-	</ol>
+  <ul class="kurippu-list">
+    <li class="kurippu-list--item" ng-repeat="post in posts | filter : search">
+      <div class="kurippu-tile">
+        <h1 class="kurippu-tile--article_title">{{post.name}}</h1>
+        <h2 class="kurippu-tile--meta">{{post.date}}</h2>
+        <p class="kurippu-tile--article--description">{{post.desc}}</p>
+        <a class="kurippu-tile--readmore_link" href="#/post/{{$index}}/{{post.file}}">more</a>
+      </div>
+    </li>
+  </ul>  
 </div>

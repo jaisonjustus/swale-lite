@@ -1,0 +1,104 @@
+/** Listing **/
+.kurippu-list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.kurippu-list--item {
+  position: relative;
+  display: inline-block;
+}
+
+
+/** Tile **/
+.kurippu-tile {
+  width: 280px;
+  height: 470px;
+  text-align: left;
+  overflow: hidden;
+  background-color: white;
+  font-size: 16px;
+  border-bottom: .1em solid #eeeeee;
+  margin-bottom: 1em;
+  color: #171817;
+}
+
+.kurippu-tile--big {
+  width: 560px;
+  background-color: white;
+}
+
+.kurippu-tile--article_type {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  padding: .2em .6em .2em .6em;
+  text-align: left;
+  background-color: green;
+  color: white;
+  font-family: 'Droid Serif' Arial;
+  font-size: .9em;
+  font-weight: 100;
+  background-color: white;
+  display: none;
+}
+
+.kurippu-tile--article_js_type { background-color: #f39c12; }
+.kurippu-tile--article_personal_type { background-color: #9b59b6; }
+.kurippu-tile--article_ruby_type { background-color: #c0392b; }
+    
+.kurippu-tile--cover_image {
+  width: 280px;
+  height: 100px;
+}
+
+.kurippu-tile--cover_image_big {
+  width: 560px;
+  height: 350px;
+}
+  
+.kurippu-tile--article_title  {
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Serif' Arial;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-top: 1em;
+  padding: 0 .6em 0em .6em;
+}
+  
+.kurippu-tile--article--description {
+  margin: 0;
+  padding: 0;
+  font-family: 'Droid Serif' Arial;
+  font-size: 1em;
+  line-height: 1.6em;
+  font-weight: 400;
+  padding:1em;
+}
+  
+.kurippu-tile--readmore_link  {
+  text-decoration: underline;
+  color: #2980b9;
+  font-family: 'Droid Serif' Arial;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 1em;
+  float: left;
+  cursor: pointer;
+}
+
+.kurippu-tile--meta {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  padding: 0em 1em 0em 1em;
+  font-weight: 300;
+  color: #444544;
+}

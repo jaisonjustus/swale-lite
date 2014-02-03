@@ -2,16 +2,16 @@
 
 }
 
-.layout__wrapper	{
-	width: 700px;
+.layout--wrapper	{
+	width: 98%;
 	height: auto;
-	padding: 10px;
+	padding: 1%;
 	overflow: hidden;
 	margin: auto;
 }
 
 @media screen and (max-width: 1030px)	{
-	.layout__wrapper{
+	.layout--wrapper{
 		width: 100%;
 		padding: 0;	
 	}
