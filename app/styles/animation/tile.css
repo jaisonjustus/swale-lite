@@ -1,6 +1,6 @@
 .swale-fx--tile.ng-enter,
 .swale-fx--tile.ng-leave{
-  -webkit-transition: 0.5s;
+  -webkit-transition: .7s;
 }
 
 .swale-fx--tile.ng-enter {
