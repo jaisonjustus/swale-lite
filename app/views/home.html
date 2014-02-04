@@ -1,31 +1,41 @@
-<div class="swale-header">
-	<img class="swale-header--avatar" src="http://www.gravatar.com/avatar/{{config.author.email}}?s=200"/>
-	<h1 class="swale-header--blog_name">{{config.blog.name}}</h1>
-	<p class="swale-header--bio">by</p>
-	<h3 class="swale-header--author">{{config.author.name}}</h3>
-	<p class="swale-header--bio">{{config.author.bio}}</p>
-	<div class="swale-header--social_links">
-		<a href="{{value}}" class="swale-header--social_link_url" target="_blank" ng-repeat="(key, value) in socials">
-			<img class="swale-header--social_link_icon" src="images/social/{{key}}.png" />
-		</a>
-	</div>
+<div class="swale-app--side_bar">
+  <div class="swale-header">
+    <img class="swale-header--avatar" src="http://www.gravatar.com/avatar/{{config.author.email}}?s=200"/>
+    <ul class="swale-header--list">
+      <li class="swale-header--list_item">
+        <a href="" class="swale-header--list_link_item">About</a>
+      </li>
+      <li class="swale-header--list_item">
+        <a href="" class="swale-header--list_link_item">Contact</a>
+      </li>
+    </ul>
+    <ul class="swale-header--social_links">
+      <li class="swale-header--social_link">
+        <a href="{{value}}" class="swale-header--social_link_url" target="_blank" ng-repeat="(key, value) in socials">
+          <img class="swale-header--social_link_icon" src="images/social/{{key}}.png" />
+        </a>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="swale-container">
-	<input type="text" class="swale-article_search" ng-model="search" placeholder="Search Article"/>
-  <ul class="swale-list">
-    <li class="swale-list--item" ng-repeat="post in posts | filter : search">
-      <div class="swale-tile swale-tile--{{post.slide_size}}">
-        <div ng-class="{ big:'swale-tile--cover_image_big', small: 'hidden' }[post.slide_size]">
-          <img src="/images/post/{{post.file}}.png" class="swale-tile--cover_image_big" />
+<div class="swale-app--content_wrapper">
+  <div class="swale-app--container">
+    <input type="text" class="swale-article_search" ng-model="search" placeholder="Search Article"/>
+    <ul class="swale-list">
+      <li class="swale-list--item" ng-repeat="post in posts | filter : search">
+        <div class="swale-tile swale-tile--{{post.slide_size}}">
+          <div ng-class="{ big:'swale-tile--cover_image_big', small: 'hidden' }[post.slide_size]">
+            <img src="/images/post/{{post.file}}.png" class="swale-tile--cover_image_big" />
+          </div>
+          <a class="swale-tile--article_link" href="#/post/{{$index}}/{{post.file}}">
+            <h1 class="swale-tile--article_title">{{post.name}}</h1>
+          </a>
+          <h2 class="swale-tile--meta">{{post.about}}, {{post.date}}</h2>
+          <p class="swale-tile--article--description">{{post.desc}}</p>
+          <a class="swale-tile--readmore_link" href="#/post/{{$index}}/{{post.file}}">more</a>
         </div>
-        <a class="swale-tile--article_link" href="#/post/{{$index}}/{{post.file}}">
-          <h1 class="swale-tile--article_title">{{post.name}}</h1>
-        </a>
-        <h2 class="swale-tile--meta">{{post.about}}, {{post.date}}</h2>
-        <p class="swale-tile--article--description">{{post.desc}}</p>
-        <a class="swale-tile--readmore_link" href="#/post/{{$index}}/{{post.file}}">more</a>
-      </div>
-    </li>
-  </ul>  
+      </li>
+    </ul>  
+  </div>
 </div>
