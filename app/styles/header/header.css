@@ -1,55 +1,84 @@
 .swale-header	{
-  width: 50%;
+  width: 94%;
+  overflow: hidden;
 	text-align: center;
 	padding-bottom: 30px;
-	border-bottom: 1px solid #eeeeee;
-  margin: auto;
+  margin: 30px 0px 10px 0px;
+  padding: 2% 3% 2% 3%;
+  color: white;
 }
 
 .swale-header--avatar	{
-	margin: 0; padding: 0;
-	margin-bottom: 20px;
-	width: 200px;
-	height: 200px;
-	border-radius: 200px;
-	background-color: white;
-	padding: 10px;
-	box-shadow: 0px 0px 3px 1px #eeeeee;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  background-color: white;
+  padding: 3px;
 }
 
 .swale-header--blog_name	{
 	margin: 0; padding: 0;
 	margin-bottom: 10px;
-	font: 700 40px "Source Sans Pro";
+	font: 600 20px "Source Sans Pro";
 }
 
 .swale-header--bio	{
 	margin: 0; padding: 0;
 	margin-bottom: 5px;
-	font: 200 20px "Source Sans Pro";
+	font: 300 16px "Source Sans Pro";
+  line-height: 22px;
 }
 
 .swale-header--author	{
 	margin: 0; padding: 0;
 	margin-bottom: 5px;
-	font: 300 25px "Source Sans Pro";
+	font: 500 20px "Source Sans Pro";
 }
 
 .swale-header--social_links	{
+  margin: 0;
+  padding: 0;
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	margin-top: 30px;
+	margin-top: 70px;
+}
+
+.swale-header--social_link  {
+
 }
 
 .swale-header--social_link_url	{
 	text-decoration: none;
 	border: 0;
+  display: block;
 }
 
 .swale-header--social_link_icon	{
-	width:50px;
-	height: 50px;
+	width:40px;
+	height: 40px;
+}
+
+.swale-header--list {
+  margin: 0;
+  padding: 0;
+}
+
+.swale-header--list_item  {
+  color: white;
+}
+
+.swale-header--list_link_item {
+  color: white;
+  font: 600 18px "Source Sans Pro";
+  text-decoration: none;
+}
+
+.swale-header--list_link_item:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width:1030px)	{

@@ -19,9 +19,10 @@
   width: 30%;
   height: 30px;
   border-radius: 30px;
-  margin: auto;
+  float: right;
   margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-right: 25px;
   border: 0;
   border: 2px solid #dddddd;
   padding:0 1% 0 1%;
@@ -37,6 +38,7 @@
   background-color: white;
   font-size: 16px;
   border-bottom: .1em solid #eeeeee;
+  margin-right: 10px;
   margin-bottom: 1em;
   color: #171817;
 }
