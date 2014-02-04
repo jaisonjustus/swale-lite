@@ -1,30 +1,30 @@
-<div class="kurippu-header">
-	<img class="kurippu-header--avatar" src="http://www.gravatar.com/avatar/{{config.author.email}}?s=200"/>
-	<h1 class="kurippu-header--blog_name">{{config.blog.name}}</h1>
-	<p class="kurippu-header--bio">by</p>
-	<h3 class="kurippu-header--author">{{config.author.name}}</h3>
-	<p class="kurippu-header--bio">{{config.author.bio}}</p>
-	<div class="kurippu-header--social_links">
-		<a href="{{value}}" class="kurippu-header--social_link_url" target="_blank" ng-repeat="(key, value) in socials">
-			<img class="kurippu-header--social_link_icon" src="images/social/{{key}}.png" />
+<div class="swale-header">
+	<img class="swale-header--avatar" src="http://www.gravatar.com/avatar/{{config.author.email}}?s=200"/>
+	<h1 class="swale-header--blog_name">{{config.blog.name}}</h1>
+	<p class="swale-header--bio">by</p>
+	<h3 class="swale-header--author">{{config.author.name}}</h3>
+	<p class="swale-header--bio">{{config.author.bio}}</p>
+	<div class="swale-header--social_links">
+		<a href="{{value}}" class="swale-header--social_link_url" target="_blank" ng-repeat="(key, value) in socials">
+			<img class="swale-header--social_link_icon" src="images/social/{{key}}.png" />
 		</a>
 	</div>
 </div>
 
-<div class="kurippu-container">
-	<input type="text" class="kurippu-article_search" ng-model="search" placeholder="Search Article"/>
-  <ul class="kurippu-list">
-    <li class="kurippu-list--item" ng-repeat="post in posts | filter : search">
-      <div class="kurippu-tile kurippu-tile--{{post.slide_size}}">
-        <div ng-class="{ big:'kurippu-tile--cover_image_big', small: 'hidden' }[post.slide_size]">
-          <img src="/images/post/{{post.file}}.png" class="kurippu-tile--cover_image_big" />
+<div class="swale-container">
+	<input type="text" class="swale-article_search" ng-model="search" placeholder="Search Article"/>
+  <ul class="swale-list">
+    <li class="swale-list--item" ng-repeat="post in posts | filter : search">
+      <div class="swale-tile swale-tile--{{post.slide_size}}">
+        <div ng-class="{ big:'swale-tile--cover_image_big', small: 'hidden' }[post.slide_size]">
+          <img src="/images/post/{{post.file}}.png" class="swale-tile--cover_image_big" />
         </div>
-        <a class="kurippu-tile--article_link" href="#/post/{{$index}}/{{post.file}}">
-          <h1 class="kurippu-tile--article_title">{{post.name}}</h1>
+        <a class="swale-tile--article_link" href="#/post/{{$index}}/{{post.file}}">
+          <h1 class="swale-tile--article_title">{{post.name}}</h1>
         </a>
-        <h2 class="kurippu-tile--meta">{{post.about}}, {{post.date}}</h2>
-        <p class="kurippu-tile--article--description">{{post.desc}}</p>
-        <a class="kurippu-tile--readmore_link" href="#/post/{{$index}}/{{post.file}}">more</a>
+        <h2 class="swale-tile--meta">{{post.about}}, {{post.date}}</h2>
+        <p class="swale-tile--article--description">{{post.desc}}</p>
+        <a class="swale-tile--readmore_link" href="#/post/{{$index}}/{{post.file}}">more</a>
       </div>
     </li>
   </ul>  

@@ -1,5 +1,5 @@
 /** Listing **/
-.kurippu-list {
+.swale-list {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -9,13 +9,13 @@
   font-size: 0;
 }
 
-.kurippu-list--item {
+.swale-list--item {
   position: relative;
   display: inline-block;
 }
 
 /** Search Box **/
-.kurippu-article_search {
+.swale-article_search {
   width: 30%;
   height: 30px;
   border-radius: 30px;
@@ -30,7 +30,7 @@
 }
 
 /** Tile **/
-.kurippu-tile {
+.swale-tile {
   height: 470px;
   text-align: left;
   overflow: hidden;
@@ -41,16 +41,16 @@
   color: #171817;
 }
 
-.kurippu-tile--small  {
+.swale-tile--small  {
   width: 280px;
 }
 
-.kurippu-tile--big {
+.swale-tile--big {
   width: 560px;
   background-color: white;
 }
 
-.kurippu-tile--article_type {
+.swale-tile--article_type {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -66,31 +66,31 @@
   display: none;
 }
 
-.kurippu-tile--article_link {
+.swale-tile--article_link {
   text-decoration: none;
   color:#171817;
 }
 
-.kurippu-tile--article_link:hover {
+.swale-tile--article_link:hover {
   text-decoration: underline;
 }
 
-.kurippu-tile--article_js_type { background-color: #f39c12; }
-.kurippu-tile--article_personal_type { background-color: #9b59b6; }
-.kurippu-tile--article_ruby_type { background-color: #c0392b; }
+.swale-tile--article_js_type { background-color: #f39c12; }
+.swale-tile--article_personal_type { background-color: #9b59b6; }
+.swale-tile--article_ruby_type { background-color: #c0392b; }
     
-.kurippu-tile--cover_image {
+.swale-tile--cover_image {
   width: 280px;
   height: 100px;
 }
 
-.kurippu-tile--cover_image_big {
+.swale-tile--cover_image_big {
   width: 560px;
   height: 350px;
   box-shadow: inset 0 0 10px #000000;
 }
   
-.kurippu-tile--article_title  {
+.swale-tile--article_title  {
   margin: 0;
   padding: 0;
   font-family: 'Droid Serif' Arial;
@@ -100,7 +100,7 @@
   padding: 0 .6em 0em .6em;
 }
   
-.kurippu-tile--article--description {
+.swale-tile--article--description {
   margin: 0;
   padding: 0;
   font-family: 'Droid Serif' Arial;
@@ -110,7 +110,7 @@
   padding:1em;
 }
   
-.kurippu-tile--readmore_link  {
+.swale-tile--readmore_link  {
   text-decoration: underline;
   color: #2980b9;
   font-family: 'Droid Serif' Arial;
@@ -121,7 +121,7 @@
   cursor: pointer;
 }
 
-.kurippu-tile--meta {
+.swale-tile--meta {
   margin: 0;
   padding: 0;
   font-size: 1em;

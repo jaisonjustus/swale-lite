@@ -1,4 +1,4 @@
-.kurippu-header	{
+.swale-header	{
   width: 50%;
 	text-align: center;
 	padding-bottom: 30px;
@@ -6,7 +6,7 @@
   margin: auto;
 }
 
-.kurippu-header--avatar	{
+.swale-header--avatar	{
 	margin: 0; padding: 0;
 	margin-bottom: 20px;
 	width: 200px;
@@ -17,43 +17,43 @@
 	box-shadow: 0px 0px 3px 1px #eeeeee;
 }
 
-.kurippu-header--blog_name	{
+.swale-header--blog_name	{
 	margin: 0; padding: 0;
 	margin-bottom: 10px;
 	font: 700 40px "Source Sans Pro";
 }
 
-.kurippu-header--bio	{
+.swale-header--bio	{
 	margin: 0; padding: 0;
 	margin-bottom: 5px;
 	font: 200 20px "Source Sans Pro";
 }
 
-.kurippu-header--author	{
+.swale-header--author	{
 	margin: 0; padding: 0;
 	margin-bottom: 5px;
 	font: 300 25px "Source Sans Pro";
 }
 
-.kurippu-header--social_links	{
+.swale-header--social_links	{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
 	margin-top: 30px;
 }
 
-.kurippu-header--social_link_url	{
+.swale-header--social_link_url	{
 	text-decoration: none;
 	border: 0;
 }
 
-.kurippu-header--social_link_icon	{
+.swale-header--social_link_icon	{
 	width:50px;
 	height: 50px;
 }
 
 @media screen and (max-width:1030px)	{
-	.kurippu-header--avatar	{
+	.swale-header--avatar	{
 		width: 100px;
 		height: 100px;
 		height: auto;
@@ -62,7 +62,7 @@
 		margin: auto;
 	}
   
-  .kurippu-header {
+  .swale-header {
     width: 100%;
   }
 }
