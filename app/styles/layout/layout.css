@@ -1,18 +1,54 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body  {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
 .hidden {
   display: none;
 }
 
-.kurippu-container	{
-	width: 98%;
-	height: auto;
-	padding: 1%;
-	overflow: hidden;
-	margin: auto;
-}
-
 @media screen and (max-width: 1030px)	{
-	.kurippu-container{
+	.swale-container{
 		width: 100%;
 		padding: 0;	
 	}
+}
+
+.swale-app  {
+  display: table;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+}
+  
+.swale-app--side_bar  {
+  display: table-cell;
+  position: relative;
+  vertical-align: top;
+  padding-bottom: 49px;
+  background: #202020;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+}
+  
+.swale-app--content_wrapper {
+  margin-top: -10px;
+  vertical-align: top;
+  margin-left: 100px;
+  position: relative;
+  background-color: white;
+}
+
+.swale-app--container {
+margin-top: 30px;
 }
