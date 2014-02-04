@@ -23,7 +23,7 @@
   <div class="swale-app--container">
     <input type="text" class="swale-article_search" ng-model="search" placeholder="Search Article"/>
     <ul class="swale-list">
-      <li class="swale-list--item" ng-repeat="post in posts | filter : search">
+      <li class="swale-list--item swale-fx--tile" ng-repeat="post in posts | filter : search">
         <div class="swale-tile swale-tile--{{post.slide_size}}">
           <div ng-class="{ big:'swale-tile--cover_image_big', small: 'hidden' }[post.slide_size]">
             <img src="/images/post/{{post.file}}.png" class="swale-tile--cover_image_big" />

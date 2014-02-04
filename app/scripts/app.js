@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('Swale', [])
+angular.module('Swale', ['ngAnimate', 'ngResource', 'ngRoute'])
 
   .config(function ($routeProvider) {
     $routeProvider

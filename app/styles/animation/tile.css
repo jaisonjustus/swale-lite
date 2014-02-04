@@ -1,0 +1,20 @@
+.swale-fx--tile.ng-enter,
+.swale-fx--tile.ng-leave{
+  -webkit-transition: 0.5s;
+}
+
+.swale-fx--tile.ng-enter {
+  opacity: 0;
+}
+
+.swale-fx--tile.ng-leave {
+  opacity: 1;
+}
+
+.swale-fx--tile.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.swale-fx--tile.ng-leave.ng-leave-active {
+  opacity: 0;
+}
