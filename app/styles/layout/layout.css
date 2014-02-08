@@ -48,6 +48,7 @@ body  {
   position: relative;
   background-color: #f3f6f7;
   z-index: 3;
+  padding-top: 20px;
   padding-bottom:50px;
 }
 
