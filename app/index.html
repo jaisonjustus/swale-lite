@@ -25,7 +25,35 @@
     
   </head>
   <body ng-app="Swale">
-    <div class="swale-app" ng-view="app"></div>
+    <div class="swale-app--side_bar" ng-controller="StaticFrameController">
+      <div class="swale-header">
+        <img class="swale-header--avatar" src="http://www.gravatar.com/avatar/{{config.author.email}}?s=200"/>
+        <ul class="swale-header--list">
+          <li class="swale-header--list_item">
+            <a href="" class="swale-header--list_link_item">
+              <img class="swale-header--list_link_image" src="images/app/about.png" alt="About Me"/>
+            </a>
+          </li>
+          <li class="swale-header--list_item">
+            <a href="" class="swale-header--list_link_item">
+              <img class="swale-header--list_link_image" src="images/app/contact.png" alt="Contact Me"/>
+            </a>
+          </li>
+        </ul>
+        <!--<ul class="swale-header--social_links">
+          <li class="swale-header--social_link">
+            <a href="{{value}}" class="swale-header--social_link_url" target="_blank" ng-repeat="(key, value) in socials">
+              <img class="swale-header--social_link_icon" src="images/social/{{key}}.png" />
+            </a>
+          </li>
+        </ul>-->
+      </div>
+    </div>
+
+    <div class="swale-app--content_wrapper">
+      <div class="swale-app--container" ng-view="app">
+      </div>
+    </div>
 
     <script src="components/angular/angular.js"></script>
     <script src="components/angular-resource/angular-resource.js"></script>
@@ -37,8 +65,10 @@
 
     <!-- build:js scripts/scripts.js -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/frame.js"></script>
     <script src="scripts/controllers/home.js"></script>
     <script src="scripts/controllers/post.js"></script>
+    <script src="scripts/controllers/test.js"></script>
 
     <script src="scripts/services/config.js"></script>
     <script src="scripts/services/posts.js"></script>

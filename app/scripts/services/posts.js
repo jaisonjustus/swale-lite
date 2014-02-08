@@ -1,20 +1,18 @@
 'use strict'
 
-angular.module('Swale')
-.service('Posts', function($http)	{
+angular.module('Swale').
+  service('Posts', function($http, $q)	{
 
-	var _posts = null;
-
-	return	{
-		fetch : function()	{
-			return $http.get('/posts/post.json').success(function(data)	{
-				_posts = data;
-			});
-		},
-
-		get : function()	{
-			return _posts;
-		}
-	}
-
-});
+    this.get = function() {
+      var deferred = $q.defer(),
+          url = '/posts/post.json';
+        
+      $http.get(url).success(function(data) {
+        deferred.resolve(data);
+      });
+    
+      return deferred.promise;
+    }
+  
+  }
+);

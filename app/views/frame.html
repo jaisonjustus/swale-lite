@@ -1,0 +1,29 @@
+<div class="swale-app--side_bar">
+  <div class="swale-header">
+    <img class="swale-header--avatar" src="http://www.gravatar.com/avatar/{{config.author.email}}?s=200"/>
+    <ul class="swale-header--list">
+      <li class="swale-header--list_item">
+        <a href="" class="swale-header--list_link_item">
+          <img class="swale-header--list_link_image" src="images/app/about.png" alt="About Me"/>
+        </a>
+      </li>
+      <li class="swale-header--list_item">
+        <a href="" class="swale-header--list_link_item">
+          <img class="swale-header--list_link_image" src="images/app/contact.png" alt="Contact Me"/>
+        </a>
+      </li>
+    </ul>
+    <!--<ul class="swale-header--social_links">
+      <li class="swale-header--social_link">
+        <a href="{{value}}" class="swale-header--social_link_url" target="_blank" ng-repeat="(key, value) in socials">
+          <img class="swale-header--social_link_icon" src="images/social/{{key}}.png" />
+        </a>
+      </li>
+    </ul>-->
+  </div>
+</div>
+
+<div class="swale-app--content_wrapper">
+  <div class="swale-app--container" ui-view="content">
+  </div>
+</div>
