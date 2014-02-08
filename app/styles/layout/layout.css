@@ -7,7 +7,7 @@
 body  {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #f3f6f7;
 }
 
 .hidden {
@@ -33,20 +33,22 @@ body  {
   position: relative;
   vertical-align: top;
   padding-bottom: 49px;
-  background: #202020;
+  background: #191B1F;
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 100px;
+  width: 60px;
   z-index: 2;
 }
   
 .swale-app--content_wrapper {
-  margin-top: -10px;
+  margin-top: -30px;
   vertical-align: top;
-  margin-left: 100px;
+  margin-left: 60px;
   position: relative;
-  background-color: white;
+  background-color: #f3f6f7;
+  z-index: 3;
+  padding-bottom:50px;
 }
 
 .swale-app--container {

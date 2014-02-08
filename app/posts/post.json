@@ -1,11 +1,20 @@
 [
 	{
+		"name" : "Song O Graphika",
+		"file"  : "song-o-graphika",
+    "about" : "Javascript",
+		"date" : "19 September 2013",
+    "slide_size" : "big",
+		"desc" : "",
+		"tags" : ["illustration"]
+	},
+	{
 		"name" : "Simple style guide for Javascript",
 		"file"  : "coding-style-for-javascript",
     "about" : "Javascript",
 		"date" : "13 September 2013",
     "slide_size" : "small",
-		"desc" : "For us code is our poetry and its our privilege to make it beautiful and readable.",
+		"desc" : "For us code is our poetry and its our privilege to make it beautiful and readable. BEM is a Methodology deals with the modularised development of Web Front-Ends. This methodology is developed by a search engine giant company",
 		"tags" : ["Javascript", "style", "guide", "js"]
 	},
 	{
@@ -14,9 +23,19 @@
     "about" : "HTML & CSS",
 		"date" : "21 September 2013",
     "slide_size" : "small",
-		"desc" : "BEM is a Methodology deals with the modularised development of Web Front-Ends. This methodology is developed by a search engine giant company called __Yandex__ based on Russia and widely used across in Russia and Post-Soviet States.",
+		"desc" : "BEM is a Methodology deals with the modularised development of Web Front-Ends. This methodology is developed by a search engine giant company called Yandex based on Russia and widely used across in Russia and Post-Soviet States.",
 		"tags" : ["BEM", "CSS", "b_"]
 	},
+	{
+		"name" : "The Motorcycle Diaries",
+		"file"  : "motorcycle-diaries",
+    "about" : "Javascript",
+		"date" : "12 September 2013",
+    "slide_size" : "big",
+		"desc" : "",
+		"tags" : ["illustration"]
+	},
+  
 	{
 		"name" : "Git Ninjas - Part One",
 		"file"  : "git-comics-part-one",
@@ -24,7 +43,7 @@
 		"date" : "24 August 2013",
     "slide_size" : "big",
 		"desc" : "",
-		"tags" : ["Pub-Sub", "Javascript", "NodeJS", "Ruby"]
+		"tags" : ["illustration"]
 	},
 
 	{

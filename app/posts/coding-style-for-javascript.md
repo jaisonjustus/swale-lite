@@ -4,19 +4,17 @@ _"For us code is our poetry and its our privilege to make it beautiful and reada
 
 ## Whitespaces
  *  The basic indentation is two spaces.
- *  Try to keep lines to 80 characters or less
-
-    ```
-		var result = prompt(message, initialValue, 
-        	                       caption);
-        	                       
-	```
+ *  Try to keep lines to 80 characters or less.
+ 
+  ```
+  var result = prompt(message, initialValue, caption);      	                       
+  ```
  *  Use method chaining beautifully.
 
  	```
-		$('<p></p>')
-       		.addClass('post__message_normal')
-       		.css('font-size','12px);
+	$('<p></p>')
+      .addClass('post__message_normal')
+      .css('font-size','12px);
  	```
  *  Lines should not contain trailing spaces.
  *  Spaces after commas and semicolons, but not before.
