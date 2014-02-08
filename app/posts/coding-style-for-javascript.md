@@ -1,25 +1,19 @@
-# Coding Style Guide For Javascript
-
 _"For us code is our poetry and its our privilege to make it beautiful and readable.”_
 
 ## Whitespaces
  *  The basic indentation is two spaces.
  *  Try to keep lines to 80 characters or less.
- 
-  ```
-  var result = prompt(message, initialValue, caption);      	                       
-  ```
  *  Use method chaining beautifully.
 
- 	```
-	$('<p></p>')
-      .addClass('post__message_normal')
-      .css('font-size','12px);
- 	```
+```
+$('<p></p>')
+    .addClass('post__message_normal')
+    .css('font-size','12px);
+```
  *  Lines should not contain trailing spaces.
  *  Spaces after commas and semicolons, but not before.
  *  Separate binary operators with spaces.
- *  Spaces after keywords, e.g., `if (x > 0)`
+ *  Spaces after keywords, e.g., __if (x > 0)__
 
 ## Function and variable naming
   * Most importantly: variables are names and functions contains a verb.
@@ -27,21 +21,21 @@ _"For us code is our poetry and its our privilege to make it beautiful and reada
   * Try to declare local variables as near to their use as possible; try to initialize every variable.
   * Multiple variables declaration of the same type:
   
-  ```
-  var a = 'foo',
-      b = 'bar',
-      c = 'foobar';
-  ```  
+```
+var a = 'foo',
+    b = 'bar',
+    c = 'foobar';
+```  
 
 #### Convention table
-Type | Convention | Description
----- | ---------- | -----------
-Files | file_list_view.js | All word should be in small letter, use _ as a file_list_tpl.html delimiter between words.
-Variables/Functions | fileObject | Write variables and functions in Camel Case addUserDetails()	
-Constants | MAX_UPLOAD_LIMIT | Constants in capital letter
-Public vars/funcs | addUserDetails() | In a module if we write public variables/functions like this helps the user to understand its safe to consume the functionality.
-Private vars/funcs | _addUserDetails() | Putting underscore to the variable/functions in module help the user who  going to implement the module to under stand this method is a private and make no sense in implementation outside the method.
-Modules/Constructor | FileListView | Write module/constructor names in Pascal Case.
+ref - _(Type), (Convention), (Description)_
+
+* Files, file_list_view.js, All word should be in small letter, use _ as a file_list_tpl.html delimiter between words.
+* Variables/Functions, fileObject, Write variables and functions in Camel Case addUserDetails().
+* Constants, MAX_UPLOAD_LIMIT, Constants in capital letter.
+* Public vars/funcs, addUserDetails(), In a module if we write public variables/functions like this helps the user to understand its safe to consume the functionality.
+* Private vars/funcs, _addUserDetails(), Putting underscore to the variable/functions in module help the user who  going to implement the module to under stand this method is a private and make no sense in implementation outside the method.
+* Modules/Constructor, FileListView, Write module/constructor names in Pascal Case.
 
 ## Functions
 Braces must always be in the same line of the function definition.
@@ -53,41 +47,48 @@ function toOpenWindow(window) {
 ```
 
 ## Inline Functions
-`function valueObject(value) { return { value: value }; }`
+```
+function valueObject(value) { return { value: value }; }
+```
 
 ## If-else Construct
+
 ```
-   if (window) {
-     window.focus();
-   } else {
-     window = new Window();
-   }
+ if (window) {
+   window.focus();
+ } else {
+   window = new Window();
+ }
 ```
 
 ## Code Style   
+
 Always put else on its own line, as shown above and don't use else after return, i.e.,
+
 ```
-  if (x < y) { return -1; }
-  if (x > y) { return 1; }
-  return 0;
+if (x < y) { return -1; }
+if (x > y) { return 1; }
+return 0;
 ```
 
 ## Loop Construct
-  * for loop
+
+#### for loop
   
-     ```
-        for (var i = 0; i < 3; ++i) {
-          // the code block to be executed
-        }
-     ```
-  * while loop
+```
+for (var i = 0; i < 3; ++i) {
+  // the code block to be executed
+}
+```
+
+#### for loop
   
-     ```
-        while (i < 10) {
-          // the code block to be executed
-        }
-     ``` 
-                     
+```
+while (i < 10) {
+  // the code block to be executed
+}
+``` 
+                
 ## Return Statement
 
 ```
@@ -172,7 +173,7 @@ $( "ul.first" )
 ```
 
 ### Avoid giving long DOM query strings.
-In case of query string cascading, try to make the it simple and utilize the `.find()` method. Which give more readablity to code.
+In case of query string cascading, try to make the it simple and utilize the __.find()__ method. Which give more readablity to code.
 
 ```
 /* Bad practice. */
@@ -185,7 +186,7 @@ $('.header__wrapper')
 	.hide();
 ```
 ### Event Registering.
-Use `.on()` instead of `.bind()` and `.live()`.
+Use __.on()__ instead of __.bind()__ and __.live()__.
 
 ```
 $(document)
@@ -193,7 +194,7 @@ $(document)
 	.on('click', '.header__button_cancel', function() { /*…*/ });
 ```
 ### Reduce DOM Travesring inside loop
-Try to a reduce dom traversing/operations inside loops like `.each()`
+Try to a reduce dom traversing/operations inside loops like __.each()__
 
 ```
 /* Bad Practice. */
