@@ -55,7 +55,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro';
-  font-size: 1.3em;
+  font-size: 1.16em;
   line-height: 1.6em;
   font-weight: 400;
   padding: .5em 0em .5em 0em; 
@@ -76,8 +76,8 @@
   background-color: #f3f6f7;
   display: block;
   padding: 17px;
-  font: 100 1.2em "Monaco";
-  line-height: 35px;
+  font: 100 1em "Monaco";
+  line-height: 1.7em;
   overflow: auto;
   white-space: pre-wrap;
   color: #171817;

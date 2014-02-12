@@ -54,11 +54,11 @@ function valueObject(value) { return { value: value }; }
 ## If-else Construct
 
 ```
- if (window) {
-   window.focus();
- } else {
-   window = new Window();
- }
+if (window) {
+ window.focus();
+} else {
+ window = new Window();
+}
 ```
 
 ## Code Style   
@@ -92,9 +92,9 @@ while (i < 10) {
 ## Return Statement
 
 ```
-	return {
-		shouts : "Barbeque Time"
-	};
+return {
+	shouts : "Barbeque Time"
+};
 ```
 
 ## Commenting
@@ -102,57 +102,57 @@ while (i < 10) {
 Commenting a Variable or Logic block
 
 ```
-   /* Retrieving user details for authentication. */
-   UserModel.findOne({ email : attributes.email }, "_id name email password token", function(err, user) {
-     // ...
-   });
+/* Retrieving user details for authentication. */
+UserModel.findOne({ email : attributes.email }, "_id name email password token", function(err, user) {
+ // ...
+});
 ```
 
 Wrap the comment line with in 80~85 words like.
 
 ```
-   /* File Descriptor represents the vital information about the file like 
-      name, type, size and also have the file object. */
-   _fileDescriptor : {},
+/* File Descriptor represents the vital information about the file like 
+  name, type, size and also have the file object. */
+_fileDescriptor : {},
 ```
 
 ### Commenting a Function
 Example:
 
 ```
-   /* Method to add file descriptor to file list.
-    * @param {string} name
-    * @param {string} type
-    * @param {int} size
-    * @param {object} file
-    * @param {boolean} safe :its not a mandatory field, unless not in secure mode.
-    * @return {array}
-    */
-   function _addFileDescriptor(name, type, size, file, safe)    {
-     // ...
-     return fileList;
-   }
+/* Method to add file descriptor to file list.
+* @param {string} name
+* @param {string} type
+* @param {int} size
+* @param {object} file
+* @param {boolean} safe :its not a mandatory field, unless not in secure mode.
+* @return {array}
+*/
+function _addFileDescriptor(name, type, size, file, safe)    {
+ // ...
+ return fileList;
+}
 ```
 
 ### Commenting a Module
 Example:
 
 ```
-   /* Module to handle the file list rendering and broadcasting
-    * events regarding the view. This module is tailor made to
-    * support FileView.
-    * @module FileListView
-    */
-   define(['jquery', 'underscore', 'backbone', 'fileview'], 
-     function($, _, Backbone, FileView) {
+/* Module to handle the file list rendering and broadcasting
+* events regarding the view. This module is tailor made to
+* support FileView.
+* @module FileListView
+*/
+define(['jquery', 'underscore', 'backbone', 'fileview'], 
+ function($, _, Backbone, FileView) {
 
-     var FileListView = Backbone.View.extend({
-       // .......................
-     });
+ var FileListView = Backbone.View.extend({
+   // .......................
+ });
 
-     return FileListView;
-   });
-   
+ return FileListView;
+});
+ 
 ```
 
 ----
