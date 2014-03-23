@@ -25,7 +25,7 @@ angular.module('Swale')
           document.querySelector('.swale-article--content')
         );
       
-    		selector.append(new Showdown.converter().makeHtml(mdData[0].data));
+        selector.append(marked(mdData[0].data));
         
         images = selector.find('img');
         angular.forEach(images, function(image) {

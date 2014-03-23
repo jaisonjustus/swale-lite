@@ -1,15 +1,5 @@
 [
 	{
-		"name" : "Song O Graphika",
-		"file"  : "song-o-graphika",
-    "about" : "Javascript",
-		"date" : "19 September 2013",
-    "slide_size" : "big",
-		"desc" : "",
-    "type" : "article",
-		"tags" : ["illustration"]
-	},
-	{
 		"name" : "Simple style guide for Javascript",
 		"file"  : "coding-style-for-javascript",
     "about" : "Javascript",
@@ -29,39 +19,9 @@
 		"type" : "article",
     "tags" : ["BEM", "CSS", "b_"]
 	},
-	{
-		"name" : "The Motorcycle Diaries",
-		"file"  : "motorcycle-diaries",
-    "about" : "Javascript",
-		"date" : "12 September 2013",
-    "slide_size" : "big",
-		"desc" : "",
-    "type" : "article",		
-    "tags" : ["illustration"]
-	},
   
-	{
-		"name" : "Git Ninjas - Part One",
-		"file"  : "git-comics-part-one",
-    "about" : "illustration",
-		"date" : "24 August 2013",
-    "slide_size" : "big",
-		"desc" : "",
-    "type" : "article",
-		"tags" : ["illustration"]
-	},
+	
   
-  {
-		"name" : "just a car",
-		"file"  : "just-a-car",
-    "about" : "illustration",
-		"date" : "24 August 2013",
-    "slide_size" : "big",
-		"desc" : "",
-    "type" : "misc",
-		"tags" : ["illustration"]
-  },
-
 	{
 		"name" : "AngularJS Best Practice",
 		"file"  : "angularjs-best-practice",
@@ -72,6 +32,8 @@
     "type" : "article",
 		"tags" : ["Javascript", "AngularJS"]
 	},
+  
+ 
 
 	{
 		"name" : "Faye, The Pub/Sub Rockstart",

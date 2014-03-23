@@ -6,8 +6,12 @@ angular.module('Swale', ['ngAnimate', 'ngResource', 'ngRoute'])
     $routeProvider
       
       .when('/', {
-        templateUrl: 'views/home.html',
-        controller: 'HomeController'
+        redirectTo : '/articles'
+      })
+      
+      .when('/articles', {
+        templateUrl : 'views/home.html',
+        controller : 'HomeController'
       })
 
       .when('/post/:id/:file', {
@@ -16,7 +20,7 @@ angular.module('Swale', ['ngAnimate', 'ngResource', 'ngRoute'])
       })
 
       .otherwise({
-        redirectTo: '/'
+        redirectTo : '/articles'
       });
 
   });

@@ -28,14 +28,14 @@ var a = 'foo',
 ```  
 
 #### Convention table
-ref - _(Type), (Convention), (Description)_
-
-* Files, file_list_view.js, All word should be in small letter, use _ as a file_list_tpl.html delimiter between words.
-* Variables/Functions, fileObject, Write variables and functions in Camel Case addUserDetails().
-* Constants, MAX_UPLOAD_LIMIT, Constants in capital letter.
-* Public vars/funcs, addUserDetails(), In a module if we write public variables/functions like this helps the user to understand its safe to consume the functionality.
-* Private vars/funcs, _addUserDetails(), Putting underscore to the variable/functions in module help the user who  going to implement the module to under stand this method is a private and make no sense in implementation outside the method.
-* Modules/Constructor, FileListView, Write module/constructor names in Pascal Case.
+Type | Convention | Description
+---- | ---------- | -----------
+Files | file_list_view.js | All word should be in small letter, use _ as a file_list_tpl.html delimiter between words.
+Variables/Functions | fileObject | Write variables and functions in Camel Case addUserDetails()	
+Constants | MAX_UPLOAD_LIMIT | Constants in capital letter
+Public vars/funcs | addUserDetails() | In a module if we write public variables/functions like this helps the user to understand its safe to consume the functionality.
+Private vars/funcs | _addUserDetails() | Putting underscore to the variable/functions in module help the user who  going to implement the module to under stand this method is a private and make no sense in implementation outside the method.
+Modules/Constructor | FileListView | Write module/constructor names in Pascal Case.
 
 ## Functions
 Braces must always be in the same line of the function definition.

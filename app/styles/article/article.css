@@ -1,93 +1,155 @@
-.swale-article  {
+.swale-article {
   width: 85%;
-  height:auto;
+  height: auto;
   padding: 5%;
-  overflow:hidden;
+  overflow: hidden;
   background-color: white;
   margin: auto;
   border: 1px solid #e9eced;
   margin-bottom: 30px;
-  
   margin-top: 5%;
 }
-
-.swale-article--name	{
-	font: 700 2em "Source Sans Pro";
-  text-decoration: underline;
-	color: #171817;
-	margin: 0;
-	padding: 0;
-	margin: 5px 0px 5px 0px;
-}
-
-.swale-article--date, .swale-article--on 	{
+.swale-article--name {
   margin: 0;
   padding: 0;
-  font-size: .95em;
+  font: 600 2em "Source Sans Pro";
+  color: #171817;
+  margin: 5px 0px 5px 0px;
+}
+.swale-article--date,
+.swale-article--on {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
   padding: 0em 1em 0em 0em;
   font-weight: 300;
   color: #444544;
   font-family: 'Source Sans Pro';
 }
-
-.swale-article--content	{
-	font: 200 16px "Source Sans Pro";
-	color:#171817;
-	clear: both;
-  margin-top:20px;
-/*  padding-top:50px;*/
-/*  border-top:1px solid #e9eced;*/
+.swale-article--content {
+  font-family: 'Fenix';
+  color: #171817;
+  clear: both;
+  margin-top: 20px;
 }
-
-.swale-article--content h2, h3, h4	{
-	color: #171817;
-	margin: 0;
-	padding: 0;
-	margin: 5px 0px 5px 0px;
-}
-
-.swale-article--content h2  { 	font: 700 28px "Source Sans Pro"; }
-.swale-article--content h3  { 	font: 700 25px "Source Sans Pro"; }
-.swale-article--content h4 { 	font: 700 22px "Source Sans Pro";}
-
-
-.swale-article--content p, li	{
+.swale-article--content h2,
+h3,
+h4 {
+  width: auto;
+  display: inline-block;
+  float: left;
+  clear: left;
+  color: #171817;
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro';
+  margin: 30px 0px 5px 0px;
+  padding-bottom: 3px;
+}
+.swale-article--content h2 {
+  font-size: 1.55em;
+  border-bottom: 1px solid #171817;
+}
+.swale-article--content h3 {
+  font-size: 1.45em;
+}
+.swale-article--content h4 {
+  font-size: 1.35em;
+}
+.swale-article--content p,
+li {
+  margin: 0;
+  padding: 0;
   font-size: 1.16em;
   line-height: 1.6em;
-  font-weight: 400;
-  padding: .5em 0em .5em 0em; 
+  padding: .5em 0em .5em 0em;
+  clear: both;
 }
-
-.swale-article--content li  {
+.swale-article--content li {
   padding: 0 !important;
 }
-
-.swale-article--content a	{
-	text-decoration: none;
-	font: 400 17px "Source Sans Pro";
-	color:#3498db;
-	line-height: 30px;
+.swale-article--content a {
+  text-decoration: none;
+  font: 1em"Fenix";
+  color: #3498db;
+  line-height: 30px;
 }
-
-.swale-article--content	code {
+.swale-article--content pre code {
+  clear: both;
   background-color: #f3f6f7;
   display: block;
-  padding: 17px;
-  font: 100 1em "Monaco";
+  padding: 7px;
+  font: 100 .9em "Monaco";
+  letter-spacing: .3px;
   line-height: 1.7em;
   overflow: auto;
   white-space: pre-wrap;
-  color: #171817;
+  color: #2c3e50;
   border: 1px solid #e9eced;
 }
-
+.swale-article--content code {
+  display: inline;
+  background-color: #f3f6f7;
+  border: 1px solid #e9eced;
+  border-radius: 3px;
+  padding: 0px 3px 0px 3px;
+  color: #c0392b;
+}
 .swale-article--content img {
-	width: 100%;
+  width: 100%;
+}
+.swale-article--content strong {
+  font-weight: bold;
+}
+.swale-article--content hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: none;
 }
 
-.swale-article--content hr {
-	border: 1px solid #eeeeee;
+.swale-article--content table {
+  padding: 0;
+  border-collapse: collapse;
+  margin: .5em 0em .5em 0em;
+  clear: both;
+}
+
+.swale-article--content table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.swale-article--content table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.swale-article--content table tr th {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  text-decoration: underline;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+  background-color: #E6E6E6;
+}
+
+.swale-article--content table tr td {
+  font-size: 1.16em;
+  line-height: 1.6em;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+.swale-article--content table tr th:first-child,
+.swale-article--content table tr td:first-child {
+  margin-top: 0;
+}
+.swale-article--content table tr th:last-child,
+.swale-article--content table tr td:last-child {
+  margin-bottom: 0;
 }
