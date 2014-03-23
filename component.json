@@ -10,8 +10,8 @@
     "angular-animate" : "1.2.3",
     "angular-route" : "1.2.11",
     "angular-disqus" : "0.0.1",
-    "showdown" : "0.3.1",
-    "JavaScript-MD5" : "1.0.2"
+    "JavaScript-MD5" : "1.0.2",
+    "marked" : "0.3.2" 
   },
   "devDependencies": {
     "angular-mocks": "~1.0.5",
