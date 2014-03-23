@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 angular.module('Swale')
 .controller('HomeController', function($scope, Posts)	{
@@ -6,6 +6,6 @@ angular.module('Swale')
   var postsPromise = Posts.get();
   
   postsPromise.then(function(posts)  {
-  	$scope.posts = posts;
+    $scope.posts = posts;
   });
 });

@@ -1,10 +1,11 @@
-<div ng-class="{ big:'swale-tile--cover_image_big', small: 'hidden' }[post.slide_size]">
-    <img src="/images/post/{{post.file}}.png" class="swale-tile--cover_image_big" />
-  </div>
-  <a class="swale-tile--article_link" href="#/post/{{$index}}/{{post.file}}">
-    <h1 class="swale-tile--article_title">{{post.name.toUpperCase()}}</h1>
-  </a>
-  <h2 class="swale-tile--meta">{{post.about}}, {{post.date}}</h2>
-  <p class="swale-tile--article--description">{{post.desc.substr(0,286)}}</p>
-  
-  <a class="swale-tile--readmore_link" href="#/post/{{$index}}/{{post.file}}" ng-if="'small' == post.slide_size">.. MORE ..</a>
+<a class="swale-tile--article_link" href="#/article/{{$index}}/{{post.file}}">
+  <h1 class="swale-tile--article_title">{{post.name.toUpperCase()}}</h1>
+</a>
+
+<h2 class="swale-tile--meta">
+  {{post.about}}, {{post.date}}
+</h2>
+
+<p class="swale-tile--article--description">{{post.desc.substr(0,286)}}</p>
+
+<a class="swale-tile--readmore_link" href="#/article/{{$index}}/{{post.file}}">.. MORE ..</a>

@@ -1,16 +1,15 @@
-'use strict'
+'use strict';
 
 angular.module('Swale')
 .controller('StaticFrameController', function($rootScope, $scope, Config)	{
 
-	var socialNetworks = {},
+  var socialNetworks = {},
       configPromise = Config.get();
 
   configPromise.then(function(config)  {
     $scope.links = config.links;
-    
-  	$rootScope.config = config;
-  	$rootScope.config.author.email = md5($rootScope.config.author.email);
+    $rootScope.config = config;
+    $rootScope.config.author.email = md5($rootScope.config.author.email);
   });
       
   // $scope.socials = {};

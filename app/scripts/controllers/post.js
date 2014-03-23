@@ -7,13 +7,13 @@ angular.module('Swale')
       url = '';
 
   postsPromise.then(function(posts) {
-  	$scope.article = {};
-  	$scope.article.name = posts[$routeParams.id].name;
-  	$scope.article.date = posts[$routeParams.id].date;
+    $scope.article = {};
+    $scope.article.name = posts[$routeParams.id].name;
+    $scope.article.date = posts[$routeParams.id].date;
     
     url = '/posts/' + $routeParams.file + '.md';
     
-  	$q.all([$http.get(url)]).then(
+    $q.all([$http.get(url)]).then(
       function(mdData)	{
         var selector = null,
             markdownData = '',
@@ -21,7 +21,7 @@ angular.module('Swale')
             temp = 0,
             imgObj = {};
           
-    		selector = angular.element(
+          selector = angular.element(
           document.querySelector('.swale-article--content')
         );
       
@@ -33,7 +33,8 @@ angular.module('Swale')
           temp = imgObj.attr('src').split('/');
           imgObj.attr('src', $rootScope.config.CDN.images + temp[temp.length - 1]);
         });
-  	});
+      }
+    );
   });
   
 });

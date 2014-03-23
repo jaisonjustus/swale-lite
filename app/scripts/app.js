@@ -14,7 +14,7 @@ angular.module('Swale', ['ngAnimate', 'ngResource', 'ngRoute'])
         controller : 'HomeController'
       })
 
-      .when('/post/:id/:file', {
+      .when('/article/:id/:file', {
         templateUrl : 'views/post.html',
         controller : 'PostController'
       })
