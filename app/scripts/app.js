@@ -18,6 +18,11 @@ angular.module('Swale', ['ngAnimate', 'ngResource', 'ngRoute'])
         templateUrl : 'views/post.html',
         controller : 'PostController'
       })
+    
+      .when('/arts', {
+        templateUrl : 'views/arts.html',
+        controller : 'ArtsController'
+      })
 
       .otherwise({
         redirectTo : '/articles'

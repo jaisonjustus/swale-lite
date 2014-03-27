@@ -54,6 +54,9 @@
 .swale-header--social_link_icon {
   width: 40px;
   height: 40px;
+  border-radius: 40px;
+  background-color: white;
+  display: inline-block;
 }
 .swale-header--list {
   margin: 0;
@@ -73,7 +76,7 @@
   border: 0;
 }
 .swale-header--list_item_selected {
-    background-color: #e74c3c;
+  background-color: #e74c3c;
 }
 .swale-header--list_item:first-child {} .swale-header--list_link_item {
   color: white;
