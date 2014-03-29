@@ -1,20 +1,7 @@
 <input type="text" class="swale-article_search" ng-model="search" placeholder="Find your interest"/>
 <ul class="swale-list">
-  <li class="swale-list--item swale-fx--tile" 
-    ng-repeat="post in posts | filter : search" ng-switch on="post.type">
-    
-    
-    <div  ng-switch-when="article">
-      <div class="swale-tile swale-tile--small"     
-          ng-include="'/views/tiles.html'">
-      </div>
+  <li class="swale-list--item swale-fx--tile" ng-repeat="post in posts | filter : search">
+    <div class="swale-tile swale-tile--small" ng-include="'/views/tiles.html'">
     </div>
-    
-    <div  ng-switch-when="misc">
-      <div class="swale-tile swale-tile--transparent swale-tile--{{post.slide_size}}"     
-          ng-include="'/views/misc.html'">
-      </div>
-    </div>
-    
   </li>
 </ul>
