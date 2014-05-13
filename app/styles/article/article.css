@@ -114,6 +114,7 @@ li {
   border-collapse: collapse;
   margin: .5em 0em .5em 0em;
   clear: both;
+  font-size: 1em;
 }
 
 .swale-article--content table tr {
@@ -139,7 +140,7 @@ li {
 }
 
 .swale-article--content table tr td {
-  font-size: 1.16em;
+  font-size: 1em;
   line-height: 1.6em;
   border: 1px solid #cccccc;
   text-align: left;

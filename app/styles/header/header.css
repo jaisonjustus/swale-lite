@@ -29,14 +29,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
-  font: 300 16px"Source Sans Pro";
+  font: 300 16px "Noto Sans";
   line-height: 22px;
 }
 .swale-header--author {
   margin: 0;
   padding: 0;
   margin-bottom: 5px;
-  font: 500 20px"Source Sans Pro";
+  font: 500 20px "Noto Sans";
 }
 .swale-header--social_links {
   margin: 0;
@@ -58,6 +58,7 @@
   background-color: white;
   display: inline-block;
 }
+
 .swale-header--list {
   margin: 0;
   padding: 0;
@@ -80,7 +81,7 @@
 }
 .swale-header--list_item:first-child {} .swale-header--list_link_item {
   color: white;
-  font: 500 16px"Source Sans Pro";
+  font: 400 15px "Noto Sans";
   letter-spacing: 2px;
   text-decoration: none;
   width: auto;
@@ -108,13 +109,13 @@
   padding: 13px 20px;
 }
 .swale-header--text_wrapper_name {
-  font: 200 23px'Source Sans Pro';
+  font: 400 21px 'Noto Sans';
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
 }
 .swale-header--text_wrapper_description {
-  font: 400 14px'Fenix';
+  font: 400 13px 'Noto Sans';
   line-height: 18px;
   margin: 0;
   padding: 0;
